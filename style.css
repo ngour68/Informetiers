@@ -1,0 +1,80 @@
+/* Couleur site */
+.text-primary {
+    color: #38B6FF !important;
+}
+
+a {
+    color: #38B6FF;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: apparition 1s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #47484d;
+}
+
+/* Backround floutée */
+body::before {
+    content: "";
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    width: 110%;
+    height: 110%;
+    background-image: url("images/fond.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+header img {
+    height: 40px;
+    display: block;
+}
+
+/* Titre */
+.titre-accueil {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #dee2e6;
+    border-radius: 16px;
+    padding: 16px 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Barre de recherche */
+form {
+    width: 90%;
+    max-width: 584px;
+}
+
+#recherche:focus {
+    border-color: #38B6FF;
+    box-shadow: 0 1px 6px rgba(56, 182, 255, 0.4);
+}
+
+/* Page métier */
+.contenu {
+    width: 90%;
+    max-width: 800px;
+}
+
+.contenu h3 {
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #38B6FF;
+    padding-bottom: 8px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
